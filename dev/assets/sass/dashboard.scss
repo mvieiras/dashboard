@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+$color-base-0: #5F5F5F;
+$color-breadcrumb-active: #90999c;
+$color-icons: #B0B0B0;
+$color-default: #22BAA0;
+
+.np {padding: 0;}
+.npl {padding-left: 0;}
+.npr {padding-right: 0;}
+
+@media (min-width: 0){
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F1F4F9;
+    .navbar {
+      .navbar-header {
+        background-color: #FFF;
+        height: 60px;
+        border-bottom: 1px solid #ccc;
+      }
+      .navbar-toggle {
+        float: left;
+        margin-top: 12px;
+        .icon-bar {
+          background-color: $color-base-0;
+        }
+      }
+      .navbar-collapse {
+        background-color: #FFF;
+        ul {
+          margin: 0 -15px;
+          li {
+            border-bottom: 1px solid #ccc;
+          }
+        }
+      }
+      a {
+        &.navbar-brand {
+          display: block;
+          text-align: center;
+          width: 100%;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 60px;
+          color: $color-base-0;
+          padding: 0 15px;
+        }
+      }
+    }
+    section {
+      &.home-dashboard {
+        .dashboard-breadcrumb {
+          margin-top: 60px;
+          padding: 20px;
+          background: #e9edf2;
+          border-bottom: 1px solid #DEE2E8;
+          h2 {
+            font-size: 24px;
+            font-weight: 300;
+            color: #74767d;
+            padding: 0;
+            margin: 0 0 4px;
+          }
+          ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            overflow: hidden;
+            li {
+              float: left;
+              margin-right: 10px;
+              color: $color-base-0;
+              &:last-child {
+                &:after {
+                  display: none;
+                }
+              }
+              &:after {
+                float: right;
+                margin-left: 10px;
+                content: '/';
+                color: $color-breadcrumb-active;
+              }
+              &.active {
+                color: $color-breadcrumb-active;
+              }
+            }
+            i {
+              &.icon-users {
+                font-size: 31px;
+                color: $color-icons;
+              }
+            }
+          }
+        }
+        main {
+          &.main-wrapper {
+            padding: 20px;
+            table {
+              display: block;
+              background-color: #FFF;
+              padding: 20px;
+              margin-bottom: 20px;
+              -webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+              -moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+              box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+              thead {
+                tr {
+                  th {
+                    display: block;
+                    font-size: 24px;
+                    font-weight: 300;
+                    color: #000;
+                    margin-bottom: 15px;
+                  }
+                }
+              }
+              tfoot {
+                tr {
+                  td {
+                    display: block;
+                    font-size: 11px;
+                    margin-top: 20px;
+                  }
+                }
+              }
+              tbody {
+                tr {
+                  border-bottom: 1px solid #E0E0E0;
+                  td {
+                    width: 50%;
+                    padding: 10px;
+                  }
+                }
+              }
+            }
+            .dashboard-card {
+              background-color: #FFF;
+              padding: 20px;
+              -webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+              -moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+              box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+              margin-bottom: 25px;
+              strong {
+                font-size: 28px;
+                margin-bottom: 14px;
+                color: #374051;
+                font-weight: 300
+              }
+              i {
+                float: right;
+                font-size: 31px;
+                color: #B0B0B0;
+              }
+              small {
+                display: block;
+                font-size: 13px;
+                margin-bottom: 10px;
+                color: #B0B0B0
+              }
+              .dashboard-progress-bar {
+                height: 5px;
+                width: 100%;
+                background-color: #f5f5f5;
+                .dashboard-progress {
+                  position: absolute;
+                  height: 5px;
+                  &.dashboard-progress-var-0 {
+                    background-color: $color-default;
+                  }
+                  &.dashboard-progress-var-1 {
+                    background-color: #12AFCB;
+                  }
+                  &.dashboard-progress-var-2 {
+                    background-color: #f6d433;
+                  }
+                  &.dashboard-progress-var-3 {
+                    background-color: #f25656;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  body {
+    section {
+      &.home-dashboard {
+        .dashboard-breadcrumb {
+          margin-top: 0;
+        }
+        .menu-desktop {
+          height: 100vh;
+          width: 100%;
+          background-color: #34425A;
+          ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            li {
+              &.inital-brand {
+                display: block;
+                text-align: center;
+                background-color: $color-default;
+                height: 60px;
+                padding-top: 3px;
+                span {
+                  &.logo-default {
+                    background-image: url('../images/logo-fadigometro.png');
+                    background-size: 100%;
+                    display: block;
+                    width: 75px;
+                    height: 53px;
+                    margin: 0 auto;
+                  }
+                }
+              }
+              &.active {
+                background-color: #2b384e;
+                i {
+                  color: white;
+                }
+              }
+              i {
+                display: block;
+                padding: 20px 0;
+                color: #899dc1;
+                text-align: center;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .sub-menu {
+          height: 60px;
+          width: 100%;
+          background-color: #FFF;
+          ul {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            li {
+              float: left;
+              line-height: 60px;
+              font-size: 20px;
+              margin: 0 20px;
+              i {
+                cursor: pointer;
+                &:hover {
+                  color: #22BAA0;
+                }
+              }
+              &.exit {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

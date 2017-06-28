@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+.np {
+  padding: 0; }
+
+.npl {
+  padding-left: 0; }
+
+.npr {
+  padding-right: 0; }
+
+@media (min-width: 0) {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F1F4F9; }
+    body .navbar .navbar-header {
+      background-color: #FFF;
+      height: 60px;
+      border-bottom: 1px solid #ccc; }
+    body .navbar .navbar-toggle {
+      float: left;
+      margin-top: 12px; }
+      body .navbar .navbar-toggle .icon-bar {
+        background-color: #5F5F5F; }
+    body .navbar .navbar-collapse {
+      background-color: #FFF; }
+      body .navbar .navbar-collapse ul {
+        margin: 0 -15px; }
+        body .navbar .navbar-collapse ul li {
+          border-bottom: 1px solid #ccc; }
+    body .navbar a.navbar-brand {
+      display: block;
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 60px;
+      color: #5F5F5F;
+      padding: 0 15px; }
+    body section.home-dashboard .dashboard-breadcrumb {
+      margin-top: 60px;
+      padding: 20px;
+      background: #e9edf2;
+      border-bottom: 1px solid #DEE2E8; }
+      body section.home-dashboard .dashboard-breadcrumb h2 {
+        font-size: 24px;
+        font-weight: 300;
+        color: #74767d;
+        padding: 0;
+        margin: 0 0 4px; }
+      body section.home-dashboard .dashboard-breadcrumb ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        overflow: hidden; }
+        body section.home-dashboard .dashboard-breadcrumb ul li {
+          float: left;
+          margin-right: 10px;
+          color: #5F5F5F; }
+          body section.home-dashboard .dashboard-breadcrumb ul li:last-child:after {
+            display: none; }
+          body section.home-dashboard .dashboard-breadcrumb ul li:after {
+            float: right;
+            margin-left: 10px;
+            content: '/';
+            color: #90999c; }
+          body section.home-dashboard .dashboard-breadcrumb ul li.active {
+            color: #90999c; }
+        body section.home-dashboard .dashboard-breadcrumb ul i.icon-users {
+          font-size: 31px;
+          color: #B0B0B0; }
+    body section.home-dashboard main.main-wrapper {
+      padding: 20px; }
+      body section.home-dashboard main.main-wrapper table {
+        display: block;
+        background-color: #FFF;
+        padding: 20px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1); }
+        body section.home-dashboard main.main-wrapper table thead tr th {
+          display: block;
+          font-size: 24px;
+          font-weight: 300;
+          color: #000;
+          margin-bottom: 15px; }
+        body section.home-dashboard main.main-wrapper table tfoot tr td {
+          display: block;
+          font-size: 11px;
+          margin-top: 20px; }
+        body section.home-dashboard main.main-wrapper table tbody tr {
+          border-bottom: 1px solid #E0E0E0; }
+          body section.home-dashboard main.main-wrapper table tbody tr td {
+            width: 50%;
+            padding: 10px; }
+      body section.home-dashboard main.main-wrapper .dashboard-card {
+        background-color: #FFF;
+        padding: 20px;
+        -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 25px; }
+        body section.home-dashboard main.main-wrapper .dashboard-card strong {
+          font-size: 28px;
+          margin-bottom: 14px;
+          color: #374051;
+          font-weight: 300; }
+        body section.home-dashboard main.main-wrapper .dashboard-card i {
+          float: right;
+          font-size: 31px;
+          color: #B0B0B0; }
+        body section.home-dashboard main.main-wrapper .dashboard-card small {
+          display: block;
+          font-size: 13px;
+          margin-bottom: 10px;
+          color: #B0B0B0; }
+        body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar {
+          height: 5px;
+          width: 100%;
+          background-color: #f5f5f5; }
+          body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress {
+            position: absolute;
+            height: 5px; }
+            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-0 {
+              background-color: #22BAA0; }
+            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-1 {
+              background-color: #12AFCB; }
+            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-2 {
+              background-color: #f6d433; }
+            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-3 {
+              background-color: #f25656; } }
+
+@media (min-width: 992px) {
+  body section.home-dashboard .dashboard-breadcrumb {
+    margin-top: 0; }
+  body section.home-dashboard .menu-desktop {
+    height: 100vh;
+    width: 100%;
+    background-color: #34425A; }
+    body section.home-dashboard .menu-desktop ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none; }
+      body section.home-dashboard .menu-desktop ul li.inital-brand {
+        display: block;
+        text-align: center;
+        background-color: #22BAA0;
+        height: 60px;
+        padding-top: 3px; }
+        body section.home-dashboard .menu-desktop ul li.inital-brand span.logo-default {
+          background-image: url("../images/logo-fadigometro.png");
+          background-size: 100%;
+          display: block;
+          width: 75px;
+          height: 53px;
+          margin: 0 auto; }
+      body section.home-dashboard .menu-desktop ul li.active {
+        background-color: #2b384e; }
+        body section.home-dashboard .menu-desktop ul li.active i {
+          color: white; }
+      body section.home-dashboard .menu-desktop ul li i {
+        display: block;
+        padding: 20px 0;
+        color: #899dc1;
+        text-align: center;
+        cursor: pointer; }
+  body section.home-dashboard .sub-menu {
+    height: 60px;
+    width: 100%;
+    background-color: #FFF; }
+    body section.home-dashboard .sub-menu ul {
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      list-style-type: none; }
+      body section.home-dashboard .sub-menu ul li {
+        float: left;
+        line-height: 60px;
+        font-size: 20px;
+        margin: 0 20px; }
+        body section.home-dashboard .sub-menu ul li i {
+          cursor: pointer; }
+          body section.home-dashboard .sub-menu ul li i:hover {
+            color: #22BAA0; }
+        body section.home-dashboard .sub-menu ul li.exit {
+          float: right; } }
