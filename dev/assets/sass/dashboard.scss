@@ -209,17 +209,17 @@ $color-default: #22BAA0;
               &.inital-brand {
                 display: block;
                 text-align: center;
-                background-color: $color-default;
+                background-color: white;
                 height: 60px;
                 padding-top: 3px;
                 span {
                   &.logo-default {
-                    background-image: url('../images/logo-fadigometro.png');
+                    background: url(../images/logo-fadigometro.png) 0 -55px;
                     background-size: 100%;
                     display: block;
-                    width: 75px;
-                    height: 53px;
-                    margin: 0 auto;
+                    width: 120px;
+                    height: 30px;
+                    margin: 14px auto;
                   }
                 }
               }

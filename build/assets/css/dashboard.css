@@ -144,16 +144,16 @@
       body section.home-dashboard .menu-desktop ul li.inital-brand {
         display: block;
         text-align: center;
-        background-color: #22BAA0;
+        background-color: white;
         height: 60px;
         padding-top: 3px; }
         body section.home-dashboard .menu-desktop ul li.inital-brand span.logo-default {
-          background-image: url("../images/logo-fadigometro.png");
+          background: url(../images/logo-fadigometro.png) 0 -55px;
           background-size: 100%;
           display: block;
-          width: 75px;
-          height: 53px;
-          margin: 0 auto; }
+          width: 120px;
+          height: 30px;
+          margin: 14px auto; }
       body section.home-dashboard .menu-desktop ul li.active {
         background-color: #2b384e; }
         body section.home-dashboard .menu-desktop ul li.active i {
