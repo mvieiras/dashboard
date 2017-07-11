@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans");
 .np {
   padding: 0; }
 
@@ -10,8 +11,7 @@
 
 @media (min-width: 0) {
   body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F1F4F9; }
+    font-family: 'Open Sans', sans-serif; }
     body .navbar .navbar-header {
       background-color: #FFF;
       height: 60px;
@@ -36,99 +36,125 @@
       line-height: 60px;
       color: #5F5F5F;
       padding: 0 15px; }
-    body section.home-dashboard .dashboard-breadcrumb {
-      margin-top: 60px;
-      padding: 20px;
-      background: #e9edf2;
-      border-bottom: 1px solid #DEE2E8; }
-      body section.home-dashboard .dashboard-breadcrumb h2 {
-        font-size: 24px;
-        font-weight: 300;
-        color: #74767d;
-        padding: 0;
-        margin: 0 0 4px; }
-      body section.home-dashboard .dashboard-breadcrumb ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        overflow: hidden; }
-        body section.home-dashboard .dashboard-breadcrumb ul li {
-          float: left;
-          margin-right: 10px;
-          color: #5F5F5F; }
-          body section.home-dashboard .dashboard-breadcrumb ul li:last-child:after {
-            display: none; }
-          body section.home-dashboard .dashboard-breadcrumb ul li:after {
-            float: right;
-            margin-left: 10px;
-            content: '/';
-            color: #90999c; }
-          body section.home-dashboard .dashboard-breadcrumb ul li.active {
-            color: #90999c; }
-        body section.home-dashboard .dashboard-breadcrumb ul i.icon-users {
-          font-size: 31px;
-          color: #B0B0B0; }
-    body section.home-dashboard main.main-wrapper {
-      padding: 20px; }
-      body section.home-dashboard main.main-wrapper table {
-        display: block;
-        background-color: #FFF;
+    body section.home-dashboard {
+      background-color: #F1F4F9; }
+      body section.home-dashboard .dashboard-breadcrumb {
+        margin-top: 60px;
         padding: 20px;
-        margin-bottom: 20px;
-        -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1); }
-        body section.home-dashboard main.main-wrapper table thead tr th {
-          display: block;
+        background: #e9edf2;
+        border-bottom: 1px solid #DEE2E8; }
+        body section.home-dashboard .dashboard-breadcrumb h2 {
           font-size: 24px;
           font-weight: 300;
-          color: #000;
-          margin-bottom: 15px; }
-        body section.home-dashboard main.main-wrapper table tfoot tr td {
+          color: #74767d;
+          padding: 0;
+          margin: 0 0 4px; }
+        body section.home-dashboard .dashboard-breadcrumb ul {
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          overflow: hidden; }
+          body section.home-dashboard .dashboard-breadcrumb ul li {
+            float: left;
+            margin-right: 10px;
+            color: #5F5F5F; }
+            body section.home-dashboard .dashboard-breadcrumb ul li:last-child:after {
+              display: none; }
+            body section.home-dashboard .dashboard-breadcrumb ul li:after {
+              float: right;
+              margin-left: 10px;
+              content: '/';
+              color: #90999c; }
+            body section.home-dashboard .dashboard-breadcrumb ul li.active {
+              color: #90999c; }
+          body section.home-dashboard .dashboard-breadcrumb ul i.icon-users {
+            font-size: 31px;
+            color: #B0B0B0; }
+      body section.home-dashboard main.main-wrapper {
+        padding: 20px; }
+        body section.home-dashboard main.main-wrapper table {
           display: block;
-          font-size: 11px;
-          margin-top: 20px; }
-        body section.home-dashboard main.main-wrapper table tbody tr {
-          border-bottom: 1px solid #E0E0E0; }
-          body section.home-dashboard main.main-wrapper table tbody tr td {
-            width: 50%;
-            padding: 10px; }
-      body section.home-dashboard main.main-wrapper .dashboard-card {
-        background-color: #FFF;
-        padding: 20px;
-        -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 25px; }
-        body section.home-dashboard main.main-wrapper .dashboard-card strong {
-          font-size: 28px;
-          margin-bottom: 14px;
-          color: #374051;
-          font-weight: 300; }
-        body section.home-dashboard main.main-wrapper .dashboard-card i {
-          float: right;
-          font-size: 31px;
-          color: #B0B0B0; }
-        body section.home-dashboard main.main-wrapper .dashboard-card small {
-          display: block;
-          font-size: 13px;
-          margin-bottom: 10px;
-          color: #B0B0B0; }
-        body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar {
-          height: 5px;
-          width: 100%;
-          background-color: #f5f5f5; }
-          body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress {
-            position: absolute;
-            height: 5px; }
-            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-0 {
-              background-color: #22BAA0; }
-            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-1 {
-              background-color: #12AFCB; }
-            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-2 {
-              background-color: #f6d433; }
-            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-3 {
-              background-color: #f25656; } }
+          background-color: #FFF;
+          padding: 20px;
+          margin-bottom: 20px;
+          -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1); }
+          body section.home-dashboard main.main-wrapper table thead tr th {
+            display: block;
+            font-size: 24px;
+            font-weight: 300;
+            color: #000;
+            margin-bottom: 15px; }
+          body section.home-dashboard main.main-wrapper table tfoot tr td {
+            display: block;
+            font-size: 11px;
+            margin-top: 20px; }
+          body section.home-dashboard main.main-wrapper table tbody tr {
+            border-bottom: 1px solid #E0E0E0; }
+            body section.home-dashboard main.main-wrapper table tbody tr td {
+              width: 50%;
+              padding: 10px; }
+        body section.home-dashboard main.main-wrapper .dashboard-card {
+          background-color: #FFF;
+          padding: 20px;
+          -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+          margin-bottom: 25px; }
+          body section.home-dashboard main.main-wrapper .dashboard-card strong {
+            font-size: 28px;
+            margin-bottom: 14px;
+            color: #374051;
+            font-weight: 300; }
+          body section.home-dashboard main.main-wrapper .dashboard-card i {
+            float: right;
+            font-size: 31px;
+            color: #B0B0B0; }
+          body section.home-dashboard main.main-wrapper .dashboard-card small {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #B0B0B0; }
+          body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar {
+            height: 5px;
+            width: 100%;
+            background-color: #f5f5f5; }
+            body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress {
+              position: absolute;
+              height: 5px; }
+              body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-0 {
+                background-color: #22BAA0; }
+              body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-1 {
+                background-color: #12AFCB; }
+              body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-2 {
+                background-color: #f6d433; }
+              body section.home-dashboard main.main-wrapper .dashboard-card .dashboard-progress-bar .dashboard-progress.dashboard-progress-var-3 {
+                background-color: #f25656; }
+    body section.login-dashboard .area-logo {
+      padding-top: 70px; }
+      body section.login-dashboard .area-logo h1 {
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 24px;
+        margin: 40px 0 10px -1px;
+        font-weight: 600; }
+      body section.login-dashboard .area-logo h2 {
+        font-size: 14px;
+        margin: 0 0 40px;
+        font-weight: 400; }
+    body section.login-dashboard .area-form input {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+      margin-bottom: 20px; }
+    body section.login-dashboard .area-form button {
+      width: 100%;
+      padding: 10px 0;
+      margin-top: 20px;
+      background-color: #2b384e;
+      color: white;
+      border: 0; } }
 
 @media (min-width: 992px) {
   body section.home-dashboard .dashboard-breadcrumb {
@@ -183,4 +209,31 @@
           body section.home-dashboard .sub-menu ul li i:hover {
             color: #22BAA0; }
         body section.home-dashboard .sub-menu ul li.exit {
-          float: right; } }
+          float: right; }
+  body section.login-dashboard .area-logo,
+  body section.login-dashboard .area-form {
+    float: left;
+    width: 50%;
+    height: 100vh;
+    box-sizing: border-box; }
+  body section.login-dashboard .area-logo {
+    background-color: #34425A;
+    margin-left: -15px; }
+    body section.login-dashboard .area-logo h1, body section.login-dashboard .area-logo h2 {
+      text-align: center;
+      color: #FFF; }
+    body section.login-dashboard .area-logo h1 {
+      font-size: 30px; }
+    body section.login-dashboard .area-logo h2 {
+      font-size: 16px; }
+  body section.login-dashboard .area-form {
+    padding-top: 200px; }
+    body section.login-dashboard .area-form input {
+      position: relative;
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%; }
+    body section.login-dashboard .area-form button {
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%; } }

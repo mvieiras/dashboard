@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
 
 $color-base-0: #5F5F5F;
 $color-breadcrumb-active: #90999c;
@@ -12,7 +13,6 @@ $color-default: #22BAA0;
 @media (min-width: 0){
   body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F1F4F9;
     .navbar {
       .navbar-header {
         background-color: #FFF;
@@ -50,6 +50,7 @@ $color-default: #22BAA0;
     }
     section {
       &.home-dashboard {
+        background-color: #F1F4F9;
         .dashboard-breadcrumb {
           margin-top: 60px;
           padding: 20px;
@@ -184,11 +185,42 @@ $color-default: #22BAA0;
           }
         }
       }
+      &.login-dashboard {
+        .area-logo {
+          padding-top: 70px;
+          h1 {
+            font-family: 'Droid Sans', sans-serif;
+            font-size: 24px;
+            margin: 40px 0 10px -1px;
+            font-weight: 600;
+          }
+          h2 {
+            font-size: 14px;
+            margin: 0 0 40px;
+            font-weight: 400;
+          }
+        }
+        .area-form {
+          input {
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+            background-color: transparent;
+            margin-bottom: 20px;
+          }
+          button {
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 20px;
+            background-color: #2b384e;
+            color: white;
+            border: 0;
+          }
+        }
+      }
     }
   }
 }
-
-
 
 @media (min-width: 992px) {
   body {
@@ -263,6 +295,43 @@ $color-default: #22BAA0;
                 float: right;
               }
             }
+          }
+        }
+      }
+      &.login-dashboard {
+        .area-logo,
+        .area-form {
+          float: left;
+          width: 50%;
+          height: 100vh;
+          box-sizing: border-box;
+        }
+        .area-logo {
+          background-color: #34425A;
+          margin-left: -15px;
+          h1, h2 {
+            text-align: center;
+            color: #FFF;
+          }
+          h1 {
+            font-size: 30px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+        }
+        .area-form {
+          padding-top: 200px;
+          input {
+            position: relative;
+            width: 40%;
+            margin-left: 30%;
+            margin-right: 30%;
+          }
+          button {
+            width: 40%;
+            margin-left: 30%;
+            margin-right: 30%;
           }
         }
       }
