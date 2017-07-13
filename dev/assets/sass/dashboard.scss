@@ -98,6 +98,10 @@ $color-default: #22BAA0;
         main {
           &.main-wrapper {
             padding: 20px;
+            .area-busca-usuarios {
+              margin: 20px 0;
+              overflow: hidden;
+            }
             table {
               display: block;
               background-color: #FFF;
@@ -132,6 +136,11 @@ $color-default: #22BAA0;
                   td {
                     width: 50%;
                     padding: 10px;
+                    i {
+                      display: block;
+                      text-align: center;
+                      cursor: pointer;
+                    }
                   }
                 }
               }

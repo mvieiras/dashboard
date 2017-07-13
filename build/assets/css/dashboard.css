@@ -72,6 +72,9 @@
             color: #B0B0B0; }
       body section.home-dashboard main.main-wrapper {
         padding: 20px; }
+        body section.home-dashboard main.main-wrapper .area-busca-usuarios {
+          margin: 20px 0;
+          overflow: hidden; }
         body section.home-dashboard main.main-wrapper table {
           display: block;
           background-color: #FFF;
@@ -95,6 +98,10 @@
             body section.home-dashboard main.main-wrapper table tbody tr td {
               width: 50%;
               padding: 10px; }
+              body section.home-dashboard main.main-wrapper table tbody tr td i {
+                display: block;
+                text-align: center;
+                cursor: pointer; }
         body section.home-dashboard main.main-wrapper #curve_chart {
           -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
           -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
