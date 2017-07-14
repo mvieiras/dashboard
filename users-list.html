@@ -38,7 +38,7 @@
                     </button>
                 </div>
                 <div class="col-xs-6">
-                    <a class="navbar-brand" href="#">AlemDaConta</a>
+                    <a class="navbar-brand" href="#">Fadigômetro</a>
                 </div>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
@@ -65,14 +65,33 @@
                         <li class="inital-brand">
                             <span class="logo-default"></span>
                         </li>
-                        <li class="active">
-                            <i class="icon-home" title="Fadigômetro"></i>
+                        <li data-value="dashboard" class="active">
+                            <i class="icon-home" title="Dashboard"></i>
+                            <span>Dashboard</span>
                         </li>
-                        <li>
-                            <i class="icon-user" title="Usuários"></i>
+                        <li data-value="cadastros">
+                            <i class="icon-user" title="Cadastros"></i>
+                            <span>Cadastros</span>
+                            <ul>
+                                <li>Usuários</li>
+                                <li>Aeronautas</li>
+                            </ul>
                         </li>
-                        <li>
-                            <i class="icon-envelope" title="Mensagens"></i>
+                        <li data-value="escalas">
+                            <i class="icon-plane" title="Escalas"></i>
+                            <span>Escalas</span>
+                            <ul>
+                                <li>Upload de Escala</li>
+                                <li>Exportar para SafteFAST</li>
+                            </ul>
+                        </li>
+                        <li data-value="auditoria">
+                            <i class="icon-layers" title="Auditoria"></i>
+                            <span>Auditoria</span>
+                        </li>
+                        <li data-value="apuracao">
+                            <i class="icon-book-open" title="Apuração"></i>
+                            <span>Apuração</span>
                         </li>
                     </ul>
                 </div>
@@ -86,13 +105,16 @@
                             <i class="icon-settings" title="Configurações"></i>
                         </li>
                         <li>
-                            <i class="icon-bubble" title="Chats"></i>
+                            <i class="icon-bubble" title="Mensagens"></i>
                         </li>
                         <li>
                             <i class="icon-calendar" title="Calendário"></i>
                         </li>
                         <li>
                             <i class="icon-size-fullscreen" title="Fullscreen"></i>
+                        </li>
+                        <li>
+                            <i class="icon-pencil" title="Troca de senha"></i>
                         </li>
                         <li class="exit">
                             <i class="icon-logout" title="Logout"></i>
@@ -118,22 +140,22 @@
             <main class="main-wrapper">
                 <div class="row">
                     <div class="area-busca-usuarios">
-                        <div class="col-xs-8">
-                            <div class="col-xs-2 np">
-                                <label for="">Buscar por:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="col-xs-12 np">
+                                <label>Buscar por:</label>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-10 npl">
                                 <div class="input-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="icon-user"></i></span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
                                 </div>
                             </div>
-                            <div class="col-xs-3 np">
+                            <div class="col-xs-2 np">
                                 <button class="btn btn-default">Ok</button>
                             </div>
                         </div>
-                        <div class="col-xs-2 col-xs-offset-2">
-                            <button class="btn btn-default">Novo Usuário</button>
+                        <div class="col-xs-6 col-sm-2 col-sm-offset-2">
+                            <button class="btn btn-default btn-new-user">Novo Usuário</button>
                         </div>
                     </div>
                 </div>
@@ -155,6 +177,26 @@
                                     <td>mario@sistema</td>
                                     <td>Mário Vieira</td>
                                 </tr>
+                                <tr>
+                                    <td>mario@sistema</td>
+                                    <td>Mário Vieira</td>
+                                </tr>
+                                <tr>
+                                    <td>mario@sistema</td>
+                                    <td>Mário Vieira</td>
+                                </tr>
+                                <tr>
+                                    <td>mario@sistema</td>
+                                    <td>Mário Vieira</td>
+                                </tr><tr>
+                                    <td>mario@sistema</td>
+                                    <td>Mário Vieira</td>
+                                </tr>
+                                <tr>
+                                    <td>mario@sistema</td>
+                                    <td>Mário Vieira</td>
+                                </tr>
+
                                 </tbody>
                             </table>
                         </div>

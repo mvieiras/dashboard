@@ -98,9 +98,23 @@ $color-default: #22BAA0;
         main {
           &.main-wrapper {
             padding: 20px;
+            .area-criar-usuarios {
+              .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+                width: 100%;
+              }
+              .input-group {
+                margin-bottom: 20px;
+              }
+            }
             .area-busca-usuarios {
               margin: 20px 0;
               overflow: hidden;
+              button {
+                &.btn-new-user {
+                  display: block;
+                  margin-top: 20px;
+                }
+              }
             }
             table {
               display: block;
@@ -296,14 +310,16 @@ $color-default: #22BAA0;
                 span {
                   color: white;
                 }
-                ul {
-                  display: block;
-                }
                 &[data-value="cadastros"],
                 &[data-value="escalas"] {
                   &:after {
                     color: white;
                   }
+                }
+              }
+              &:hover {
+                ul {
+                  display: block;
                 }
               }
               &[data-value="cadastros"],
@@ -323,7 +339,7 @@ $color-default: #22BAA0;
                 position: absolute;
                 margin-top: -92px;
                 left: 8.2vw;
-                z-index: 1;
+                z-index: 9999;
                 background-color: rgba(43,56,78,0.9);
                 min-height: 92px;
                 width: 100px;

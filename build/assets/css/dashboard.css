@@ -72,9 +72,16 @@
             color: #B0B0B0; }
       body section.home-dashboard main.main-wrapper {
         padding: 20px; }
+        body section.home-dashboard main.main-wrapper .area-criar-usuarios .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+          width: 100%; }
+        body section.home-dashboard main.main-wrapper .area-criar-usuarios .input-group {
+          margin-bottom: 20px; }
         body section.home-dashboard main.main-wrapper .area-busca-usuarios {
           margin: 20px 0;
           overflow: hidden; }
+          body section.home-dashboard main.main-wrapper .area-busca-usuarios button.btn-new-user {
+            display: block;
+            margin-top: 20px; }
         body section.home-dashboard main.main-wrapper table {
           display: block;
           background-color: #FFF;
@@ -214,10 +221,10 @@
         body section.home-dashboard .menu-desktop ul li.active span, body section.home-dashboard .menu-desktop ul li:hover i,
         body section.home-dashboard .menu-desktop ul li:hover span {
           color: white; }
-        body section.home-dashboard .menu-desktop ul li.active ul, body section.home-dashboard .menu-desktop ul li:hover ul {
-          display: block; }
         body section.home-dashboard .menu-desktop ul li.active[data-value="cadastros"]:after, body section.home-dashboard .menu-desktop ul li.active[data-value="escalas"]:after, body section.home-dashboard .menu-desktop ul li:hover[data-value="cadastros"]:after, body section.home-dashboard .menu-desktop ul li:hover[data-value="escalas"]:after {
           color: white; }
+      body section.home-dashboard .menu-desktop ul li:hover ul {
+        display: block; }
       body section.home-dashboard .menu-desktop ul li[data-value="cadastros"]:after, body section.home-dashboard .menu-desktop ul li[data-value="escalas"]:after {
         font-family: 'Glyphicons Halflings', sans-serif;
         position: absolute;
@@ -231,7 +238,7 @@
         position: absolute;
         margin-top: -92px;
         left: 8.2vw;
-        z-index: 1;
+        z-index: 9999;
         background-color: rgba(43, 56, 78, 0.9);
         min-height: 92px;
         width: 100px; }
