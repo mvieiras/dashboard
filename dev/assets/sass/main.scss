@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+
+* {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.ui-widget-header {
+  background-color: #FFF !important;
+  background-image: none;
+  border: none;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: none !important;
+  border: none;
+  box-shadow: none;
+}
+
+.table > thead:first-child > tr:first-child > th {
+  border-top: 0;
+  text-align: left !important;
+  padding: 0;
+}
+

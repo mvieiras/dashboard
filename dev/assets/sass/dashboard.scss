@@ -10,6 +10,10 @@ $color-default: #22BAA0;
 .npl {padding-left: 0;}
 .npr {padding-right: 0;}
 
+.ui-corner-all {
+  border-radius: 0;
+}
+
 @media (min-width: 0){
   body {
     font-family: 'Open Sans', sans-serif;
@@ -116,6 +120,21 @@ $color-default: #22BAA0;
                 }
               }
             }
+            .ui-widget-content {
+              border: 0;
+            }
+            .ui-widget-header {
+              background-image: none;
+              border: 0;
+              padding: 20px 20px 0 20px;
+              .ui-panel-title {
+                display: block;
+                font-size: 24px;
+                font-weight: 300;
+                color: #000;
+                margin-bottom: 15px;
+              }
+            }
             table {
               display: block;
               background-color: #FFF;
@@ -127,11 +146,11 @@ $color-default: #22BAA0;
               thead {
                 tr {
                   th {
-                    display: block;
                     font-size: 24px;
                     font-weight: 300;
                     color: #000;
                     margin-bottom: 15px;
+                    border: 0;
                   }
                 }
               }
