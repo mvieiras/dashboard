@@ -97,6 +97,48 @@
             font-weight: 300;
             color: #000;
             margin-bottom: 15px; }
+        body section.home-dashboard main.main-wrapper .ui-paginator {
+          padding: 0 !important;
+          margin-top: 20px; }
+          body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-first {
+            border-radius: 5px 0 0 5px;
+            border-right: none !important; }
+          body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-last {
+            border-radius: 0 5px 5px 0;
+            border-right: none !important; }
+          body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-first,
+          body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-next,
+          body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-prev,
+          body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-last,
+          body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-pages {
+            background: white;
+            border: 1px solid #CCC;
+            padding: 0 5px; }
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-first:hover,
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-next:hover,
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-prev:hover,
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-last:hover,
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-pages:hover {
+              text-decoration: none;
+              background-color: #e6e6e6; }
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-first span,
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-next span,
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-prev span,
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-last span,
+            body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-pages span {
+              text-align: center;
+              color: #333; }
+          body section.home-dashboard main.main-wrapper .ui-paginator .ui-paginator-page:hover {
+            text-decoration: none;
+            background-color: #e6e6e6; }
+        body section.home-dashboard main.main-wrapper .ui-paginator-rpp-label {
+          margin-left: 30px;
+          color: #5F5F5F;
+          font-weight: normal; }
+        body section.home-dashboard main.main-wrapper select {
+          color: #5F5F5F; }
+          body section.home-dashboard main.main-wrapper select option {
+            color: #5F5F5F; }
         body section.home-dashboard main.main-wrapper table {
           display: block;
           background-color: #FFF;
@@ -105,6 +147,8 @@
           -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
           -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1); }
+          body section.home-dashboard main.main-wrapper table a {
+            color: #333; }
           body section.home-dashboard main.main-wrapper table thead tr th {
             font-size: 24px;
             font-weight: 300;

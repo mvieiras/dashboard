@@ -135,6 +135,55 @@ $color-default: #22BAA0;
                 margin-bottom: 15px;
               }
             }
+            .ui-paginator {
+              padding: 0 !important;
+              margin-top: 20px;
+              .ui-paginator-first {
+                border-radius: 5px 0 0 5px;
+                border-right: none !important;
+              }
+              .ui-paginator-last {
+                border-radius: 0 5px 5px 0;
+                border-right: none !important;
+              }
+              .ui-paginator-first,
+              .ui-paginator-next,
+              .ui-paginator-prev,
+              .ui-paginator-last,
+              .ui-paginator-pages {
+                background: white;
+                border: 1px solid #CCC;
+                padding: 0 5px;
+                &:hover {
+                  text-decoration: none;
+                  background-color: #e6e6e6;
+                }
+                span {
+                  text-align: center;
+                  color: #333;
+                }
+              }
+              .ui-paginator-page {
+                &:hover {
+                  text-decoration: none;
+                  background-color: #e6e6e6;
+                }
+                span {
+
+                }
+              }
+            }
+            .ui-paginator-rpp-label {
+              margin-left: 30px;
+              color: $color-base-0;
+              font-weight: normal;
+            }
+            select {
+              color: $color-base-0;
+              option {
+                color: $color-base-0;
+              }
+            }
             table {
               display: block;
               background-color: #FFF;
@@ -143,6 +192,9 @@ $color-default: #22BAA0;
               -webkit-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
               -moz-box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
               box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
+              a {
+                color: #333;
+              }
               thead {
                 tr {
                   th {

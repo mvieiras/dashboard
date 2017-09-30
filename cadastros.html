@@ -153,32 +153,151 @@
 
                             <div class="row">
 
-                                <div class="col-md-8">
-                                    <label for="busca">Buscar por: </label>
-                                    <span> </span><input id="formTable:j_idt17" name="formTable:j_idt17" type="text" onkeypress="if (event.keyCode == 13) { $('#formTable\\:btnPesquisar').click(); return false;}" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="formTable:j_idt17_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formTable_j_idt17",{id:"formTable:j_idt17"});</script>
-
-                                    <span> </span><a id="formTable:btnPesquisar" href="#" class="ui-commandlink ui-widget btn btn-primary" onclick="PrimeFaces.ab({s:&quot;formTable:btnPesquisar&quot;,u:&quot;formTable:tbAeronautas&quot;,ps:true});return false;">
-                                    <span class="glyphicon glyphicon-search"></span></a>
+                                <div class="area-busca-usuarios">
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div class="col-xs-12 np">
+                                            <label>Buscar por:</label>
+                                        </div>
+                                        <div class="col-xs-10 npl">
+                                            <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1"><i class="icon-user"></i></span>
+                                                <input id="formTable:j_idt17" name="formTable:j_idt17" type="text" onkeypress="if (event.keyCode == 13) { $('#formTable\\:btnPesquisar').click(); return false;}" aria-describedby="basic-addon1" class="form-control ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 np">
+                                            <a id="formTable:btnPesquisar" href="#" onclick="PrimeFaces.ab({s:&quot;formTable:btnPesquisar&quot;,u:&quot;formTable:tbAeronautas&quot;,ps:true});return false;">
+                                                <button class="btn btn-default">Ok</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-2 col-sm-offset-2">
+                                        <a id="formTable:novoAeronautaBtn" href="#" onclick="mojarra.jsfcljs(document.getElementById('formTable'),{'formTable:novoAeronautaBtn':'formTable:novoAeronautaBtn'},'');return false">
+                                            <button class="btn btn-default btn-new-user">Novo Aeronauta</button>
+                                        </a>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="col-md-4">
-                                    <script type="text/javascript" src="/fdg/javax.faces.resource/jsf.js.jsf?ln=javax.faces"></script>
-                                    <a id="formTable:novoAeronautaBtn" href="#" onclick="mojarra.jsfcljs(document.getElementById('formTable'),{'formTable:novoAeronautaBtn':'formTable:novoAeronautaBtn'},'');return false" class="btn btn-primary pull-right">
-                                        <span class="glyphicon glyphicon-plus"></span> Novo Aeronauta
+                            <div id="formTable:tbAeronautas" class="ui-datatable ui-widget">
+                                <div id="formTable:tbAeronautas_paginator_top" class="ui-paginator ui-paginator-top ui-widget-header ui-corner-top" role="navigation" aria-label="Pagination">
+                                    <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page" tabindex="-1">
+                                        <span class="ui-icon ui-icon-seek-first"> << </span>
                                     </a>
+                                    <a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page" tabindex="-1">
+                                        <span class="ui-icon ui-icon-seek-prev"> < </span>
+                                    </a>
+                                    <span class="ui-paginator-pages">
+                                        <a class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0" href="#">1</a>
+                                    </span>
+                                    <a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page" tabindex="-1">
+                                        <span class="ui-icon ui-icon-seek-next"> > </span>
+                                    </a>
+                                    <a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page" tabindex="-1">
+                                        <span class="ui-icon ui-icon-seek-end"> >> </span>
+                                    </a>
+
+                                    <label id="formTable:tbAeronautas_rppLabel" for="formTable:tbAeronautas:j_id2" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label>
+                                    <select id="formTable:tbAeronautas:j_id2" name="formTable:tbAeronautas_rppDD" aria-labelledby="formTable:tbAeronautas_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="25" autocomplete="off">
+                                        <option value="25" selected="selected">25</option>
+                                        <option value="50">50</option>
+                                        <option value="200">200</option>
+                                    </select>
                                 </div>
 
-                            </div><div id="formTable:tbAeronautas" class="ui-datatable ui-widget"><div id="formTable:tbAeronautas_paginator_top" class="ui-paginator ui-paginator-top ui-widget-header ui-corner-top" role="navigation" aria-label="Pagination"><a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page" tabindex="-1"><span class="ui-icon ui-icon-seek-first">F</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page" tabindex="-1"><span class="ui-icon ui-icon-seek-prev">P</span></a><span class="ui-paginator-pages"><a class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0" href="#">1</a></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page" tabindex="-1"><span class="ui-icon ui-icon-seek-next">N</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page" tabindex="-1"><span class="ui-icon ui-icon-seek-end">E</span></a><label id="formTable:tbAeronautas_rppLabel" for="formTable:tbAeronautas:j_id2" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="formTable:tbAeronautas:j_id2" name="formTable:tbAeronautas_rppDD" aria-labelledby="formTable:tbAeronautas_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="25" autocomplete="off"><option value="25" selected="selected">25</option><option value="50">50</option><option value="200">200</option></select></div><div class="ui-datatable-tablewrapper"><table role="grid" class="table table-striped"><thead id="formTable:tbAeronautas_head"><tr role="row"><th id="formTable:tbAeronautas:j_idt23" class="ui-state-default centerx" role="columnheader" aria-label="ANAC" scope="col" style="width:100px"><span class="ui-column-title">ANAC</span></th><th id="formTable:tbAeronautas:j_idt25" class="ui-state-default" role="columnheader" aria-label="e-Mail" scope="col" style="width:200px"><span class="ui-column-title">e-Mail</span></th><th id="formTable:tbAeronautas:j_idt27" class="ui-state-default centerx" role="columnheader" aria-label="Cod. Externo" scope="col" style="width:100px"><span class="ui-column-title">Cod. Externo</span></th><th id="formTable:tbAeronautas:j_idt29" class="ui-state-default centerx" role="columnheader" aria-label="App" scope="col" style="width:50px"><span class="ui-column-title">App</span></th><th id="formTable:tbAeronautas:j_idt32" class="ui-state-default centerx" role="columnheader" scope="col" style="width:75px"><span class="ui-column-title">
-                                        <span class="glyphicon glyphicon-edit"></span></span></th><th id="formTable:tbAeronautas:j_idt35" class="ui-state-default centerx" role="columnheader" scope="col" style="width:75px"><span class="ui-column-title">
-                                        <span class="glyphicon glyphicon-trash"></span></span></th></tr></thead><tbody id="formTable:tbAeronautas_data" class="ui-datatable-data ui-widget-content"><tr data-ri="0" class="ui-widget-content ui-datatable-even" role="row"><td role="gridcell" class="centerx">1001</td><td role="gridcell">tulio@asagol.com.br</td><td role="gridcell" class="centerx">00000930</td><td role="gridcell" class="centerx"><span class="label label-default">Não</span></td><td role="gridcell" class="centerx"><a id="formTable:tbAeronautas:0:editarAeronautaBtn" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.addSubmitParam('formTable',{'formTable:tbAeronautas:0:editarAeronautaBtn':'formTable:tbAeronautas:0:editarAeronautaBtn'}).submit('formTable');return false;PrimeFaces.onPost();">
-                            <span class="glyphicon glyphicon-edit"></span> Editar
-                        </a></td><td role="gridcell" class="centerx"><a id="formTable:tbAeronautas:0:removerAeronautaBtn" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;formTable:tbAeronautas:0:removerAeronautaBtn&quot;,u:&quot;formTable:tbAeronautas&quot;,ps:true});return false;">
-                            <span class="glyphicon glyphicon-trash"></span> Desativar
-                        </a></td></tr><tr data-ri="1" class="ui-widget-content ui-datatable-odd" role="row"><td role="gridcell" class="centerx">1002</td><td role="gridcell">fulano@asagol.com.br</td><td role="gridcell" class="centerx">00004160</td><td role="gridcell" class="centerx"><span class="label label-default">Não</span></td><td role="gridcell" class="centerx"><a id="formTable:tbAeronautas:1:editarAeronautaBtn" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.addSubmitParam('formTable',{'formTable:tbAeronautas:1:editarAeronautaBtn':'formTable:tbAeronautas:1:editarAeronautaBtn'}).submit('formTable');return false;PrimeFaces.onPost();">
-                            <span class="glyphicon glyphicon-edit"></span> Editar
-                        </a></td><td role="gridcell" class="centerx"><a id="formTable:tbAeronautas:1:removerAeronautaBtn" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;formTable:tbAeronautas:1:removerAeronautaBtn&quot;,u:&quot;formTable:tbAeronautas&quot;,ps:true});return false;">
-                            <span class="glyphicon glyphicon-trash"></span> Desativar
-                        </a></td></tr></tbody></table></div><div id="formTable:tbAeronautas_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page" tabindex="-1"><span class="ui-icon ui-icon-seek-first">F</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page" tabindex="-1"><span class="ui-icon ui-icon-seek-prev">P</span></a><span class="ui-paginator-pages"><a class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0" href="#">1</a></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page" tabindex="-1"><span class="ui-icon ui-icon-seek-next">N</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page" tabindex="-1"><span class="ui-icon ui-icon-seek-end">E</span></a><label id="formTable:tbAeronautas_rppLabel" for="formTable:tbAeronautas:j_id3" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="formTable:tbAeronautas:j_id3" name="formTable:tbAeronautas_rppDD" aria-labelledby="formTable:tbAeronautas_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="25" autocomplete="off"><option value="25" selected="selected">25</option><option value="50">50</option><option value="200">200</option></select></div></div><script id="formTable:tbAeronautas_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","aeronautaVar",{id:"formTable:tbAeronautas",paginator:{id:['formTable:tbAeronautas_paginator_top','formTable:tbAeronautas_paginator_bottom'],rows:25,rowCount:2,page:0,currentPageTemplate:'({currentPage} of {totalPages})'},groupColumnIndexes:[]});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="3317937182319242429:1918997517654279423" autocomplete="off" />
+                                <div class="ui-datatable-tablewrapper">
+                                    <table role="grid" class="table table-striped">
+                                        <thead id="formTable:tbAeronautas_head">
+                                            <tr role="row">
+                                                <th id="formTable:tbAeronautas:j_idt23" class="ui-state-default centerx" role="columnheader" aria-label="ANAC" scope="col" style="width:100px">
+                                                    <span class="ui-column-title">ANAC</span>
+                                                </th>
+                                                <th id="formTable:tbAeronautas:j_idt25" class="ui-state-default" role="columnheader" aria-label="e-Mail" scope="col" style="width:200px">
+                                                    <span class="ui-column-title">e-Mail</span>
+                                                </th>
+                                                <th id="formTable:tbAeronautas:j_idt27" class="ui-state-default centerx" role="columnheader" aria-label="Cod. Externo" scope="col" style="width:100px">
+                                                    <span class="ui-column-title">Cod. Externo</span>
+                                                </th>
+                                                <th id="formTable:tbAeronautas:j_idt29" class="ui-state-default centerx" role="columnheader" aria-label="App" scope="col" style="width:50px">
+                                                    <span class="ui-column-title">App</span>
+                                                </th>
+                                                <th id="formTable:tbAeronautas:j_idt32" class="ui-state-default centerx" role="columnheader" scope="col" style="width:75px">
+                                                    <span class="ui-column-title">
+                                                        Editar
+                                                    </span>
+                                                </th>
+                                                <th id="formTable:tbAeronautas:j_idt35" class="ui-state-default centerx" role="columnheader" scope="col" style="width:75px">
+                                                    <span class="ui-column-title">
+                                                        Desativar
+                                                    </span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="formTable:tbAeronautas_data" class="ui-datatable-data ui-widget-content">
+                                            <tr data-ri="0" class="ui-widget-content ui-datatable-even" role="row">
+                                                <td role="gridcell" class="centerx">1001</td>
+                                                <td role="gridcell">tulio@asagol.com.br</td>
+                                                <td role="gridcell" class="centerx">00000930</td>
+                                                <td role="gridcell" class="centerx">
+                                                    <span class="label label-default">Não</span>
+                                                </td>
+                                                <td role="gridcell" class="centerx">
+                                                    <a id="formTable:tbAeronautas:0:editarAeronautaBtn" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.addSubmitParam('formTable',{'formTable:tbAeronautas:0:editarAeronautaBtn':'formTable:tbAeronautas:0:editarAeronautaBtn'}).submit('formTable');return false;PrimeFaces.onPost();">
+                                                        <i class="icon-pencil"></i>
+                                                    </a>
+                                                </td>
+                                                <td role="gridcell" class="centerx">
+                                                    <a id="formTable:tbAeronautas:0:removerAeronautaBtn" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;formTable:tbAeronautas:0:removerAeronautaBtn&quot;,u:&quot;formTable:tbAeronautas&quot;,ps:true});return false;">
+                                                        <i class="icon-close"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr data-ri="1" class="ui-widget-content ui-datatable-odd" role="row">
+                                                <td role="gridcell" class="centerx">1002</td>
+                                                <td role="gridcell">fulano@asagol.com.br</td>
+                                                <td role="gridcell" class="centerx">00004160</td>
+                                                <td role="gridcell" class="centerx">
+                                                    <span class="label label-default">Não</span>
+                                                </td>
+                                                <td role="gridcell" class="centerx">
+                                                    <a id="formTable:tbAeronautas:1:editarAeronautaBtn" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.addSubmitParam('formTable',{'formTable:tbAeronautas:1:editarAeronautaBtn':'formTable:tbAeronautas:1:editarAeronautaBtn'}).submit('formTable');return false;PrimeFaces.onPost();">
+                                                        <i class="icon-pencil"></i>
+                                                    </a>
+                                                </td>
+                                                <td role="gridcell" class="centerx">
+                                                    <a id="formTable:tbAeronautas:1:removerAeronautaBtn" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;formTable:tbAeronautas:1:removerAeronautaBtn&quot;,u:&quot;formTable:tbAeronautas&quot;,ps:true});return false;">
+                                                        <i class="icon-close"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="formTable:tbAeronautas_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination">
+                                    <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page" tabindex="-1">
+                                        <span class="ui-icon ui-icon-seek-first"> << </span>
+                                    </a>
+                                    <a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page" tabindex="-1">
+                                        <span class="ui-icon ui-icon-seek-prev"> < </span>
+                                    </a>
+                                    <span class="ui-paginator-pages">
+                                        <a class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0" href="#">1</a>
+                                    </span>
+                                    <a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page" tabindex="-1">
+                                        <span class="ui-icon ui-icon-seek-next"> > </span>
+                                    </a>
+                                    <a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page" tabindex="-1">
+                                        <span class="ui-icon ui-icon-seek-end"> >> </span>
+                                    </a>
+                                    <label id="formTable:tbAeronautas_rppLabel" for="formTable:tbAeronautas:j_id3" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label>
+                                    <select id="formTable:tbAeronautas:j_id3" name="formTable:tbAeronautas_rppDD" aria-labelledby="formTable:tbAeronautas_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="25" autocomplete="off">
+                                        <option value="25" selected="selected">25</option>
+                                        <option value="50">50</option>
+                                        <option value="200">200</option>
+                                    </select>
+                                </div
+                            </div>
+                            <script id="formTable:tbAeronautas_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","aeronautaVar",{id:"formTable:tbAeronautas",paginator:{id:['formTable:tbAeronautas_paginator_top','formTable:tbAeronautas_paginator_bottom'],rows:25,rowCount:2,page:0,currentPageTemplate:'({currentPage} of {totalPages})'},groupColumnIndexes:[]});});</script>
+                            <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="3317937182319242429:1918997517654279423" autocomplete="off" />
                         </form>
 
                     </div><!-- /.container -->
